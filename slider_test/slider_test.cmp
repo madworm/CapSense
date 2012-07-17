@@ -1,0 +1,31 @@
+Cmp-Mod V01 Genere par PcbNew le Tue 17 Jul 2012 11:12:00 AM CEST
+
+BeginCmp
+TimeStamp = /50051D64;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = -C0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /50052394;
+Reference = CS1;
+ValeurCmp = slider;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50051D72;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = -R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /50052699;
+Reference = TP1;
+ValeurCmp = TST;
+IdModule  = SIL-1;
+EndCmp
+
+EndListe

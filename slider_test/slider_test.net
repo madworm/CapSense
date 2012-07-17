@@ -1,0 +1,48 @@
+# EESchema Netlist Version 1.1 created  Tue 17 Jul 2012 11:11:38 AM CEST
+(
+ ( /50052C20 $noname  CS1 slider {Lib=CONN_3}
+  (    1 /pad_a_sense )
+  (    2 /pad_a_store )
+  (    3 GND )
+ )
+ ( /50052699 $noname  TP1 TST {Lib=TST}
+  (    1 /pad_a )
+ )
+ ( /50051D72 $noname  R1 R {Lib=R}
+  (    1 /pad_a_sense )
+  (    2 /pad_a )
+ )
+ ( /50051D64 $noname  C1 C {Lib=C}
+  (    1 /pad_a_store )
+  (    2 /pad_a_sense )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/pad_a" "pad_a"
+ R1 2
+ TP1 1
+Net 2 "/pad_a_sense" "pad_a_sense"
+ C1 2
+ R1 1
+ CS1 1
+Net 3 "/pad_a_store" "pad_a_store"
+ CS1 2
+ C1 1
+}
+#End
