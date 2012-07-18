@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Wed 18 Jul 2012 10:16:46 AM CEST
+# EESchema Netlist Version 1.1 created  Wed 18 Jul 2012 01:56:18 PM CEST
 (
  ( /50051D64 -C0805 C1 C
   ( 1 /pad_a_store )
@@ -9,14 +9,14 @@
   ( 2 /pad_b_sense )
  )
  ( /50052C20 SIL-3 CS1 slider
-  ( 1 /pad_a_sense )
+  ( 1 GND )
   ( 2 /pad_a_store )
-  ( 3 GND )
+  ( 3 /pad_a_sense )
  )
  ( /500670A3 SIL-3 CS2 slider
-  ( 1 /pad_b_sense )
+  ( 1 GND )
   ( 2 /pad_b_store )
-  ( 3 GND )
+  ( 3 /pad_b_sense )
  )
  ( /50051D72 -R0603 R1 R
   ( 1 /pad_a_sense )
@@ -26,10 +26,10 @@
   ( 1 /pad_b_sense )
   ( 2 /pad_b )
  )
- ( /50052699 SIL-1 TP1 TST
+ ( /50052699 1PIN_SMD TP1 TST
   ( 1 /pad_a )
  )
- ( /50067079 SIL-1 TP2 TST
+ ( /50067079 1PIN_SMD TP2 TST
   ( 1 /pad_b )
  )
 )

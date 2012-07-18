@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-jan-04)-stable date = Wed 18 Jul 2012 10:16:46 AM CEST
+Cmp-Mod V01 Created by CvPcb (2012-jan-04)-stable date = Wed 18 Jul 2012 01:56:18 PM CEST
 
 BeginCmp
 TimeStamp = /50051D64;
@@ -46,14 +46,14 @@ BeginCmp
 TimeStamp = /50052699;
 Reference = TP1;
 ValeurCmp = TST;
-IdModule  = SIL-1;
+IdModule  = 1PIN_SMD;
 EndCmp
 
 BeginCmp
 TimeStamp = /50067079;
 Reference = TP2;
 ValeurCmp = TST;
-IdModule  = SIL-1;
+IdModule  = 1PIN_SMD;
 EndCmp
 
 EndListe

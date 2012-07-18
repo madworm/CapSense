@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 18 Jul 2012 10:15:58 AM CEST
+EESchema Schematic File Version 2  date Wed 18 Jul 2012 01:56:03 PM CEST
 LIBS:my_parts
 LIBS:power
 LIBS:device
@@ -33,23 +33,23 @@ LIBS:valves
 LIBS:slider_test-cache
 EELAYER 25  0
 EELAYER END
-$Descr User 6000 4330
+$Descr User 6000 4329
 encoding utf-8
 Sheet 1 1
 Title "capsense slider"
 Date "18 jul 2012"
 Rev "0.1"
-Comp ""
+Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR?
+L GND #PWR01
 U 1 1 500670A4
 P 3150 1150
-F 0 "#PWR?" H 3150 1150 30  0001 C CNN
+F 0 "#PWR01" H 3150 1150 30  0001 C CNN
 F 1 "GND" H 3150 1080 30  0001 C CNN
 	1    3150 1150
 	1    0    0    -1  
@@ -65,16 +65,16 @@ P 3600 950
 F 0 "CS2" V 3550 950 50  0000 C CNN
 F 1 "slider" V 3650 950 40  0000 C CNN
 	1    3600 950 
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3150 850  3250 850 
 Wire Wire Line
 	3150 950  3250 950 
 Wire Wire Line
-	3150 1050 3250 1050
+	3250 1050 3150 1050
 Wire Wire Line
-	3150 1150 3150 1050
+	3150 1050 3150 1150
 $Comp
 L C C2
 U 1 1 5006707B
@@ -109,13 +109,13 @@ F 1 "TST" H 2250 1350 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 1100 1350 800 
+	1350 800  1350 1100
 Wire Wire Line
-	750  1100 750  950 
+	750  950  750  1100
 Wire Wire Line
-	850  1100 750  1100
+	750  1100 850  1100
 Wire Wire Line
-	1250 1100 1350 1100
+	1350 1100 1250 1100
 Wire Wire Line
 	2250 1100 1850 1100
 Wire Wire Line
@@ -143,7 +143,7 @@ P 3600 1500
 F 0 "CS1" V 3550 1500 50  0000 C CNN
 F 1 "slider" V 3650 1500 40  0000 C CNN
 	1    3600 1500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L TST TP1
@@ -159,10 +159,10 @@ pad_a_sense
 Text Label 3150 1500 2    60   ~ 0
 pad_a_store
 $Comp
-L GND #PWR01
+L GND #PWR02
 U 1 1 50052303
 P 3150 1700
-F 0 "#PWR01" H 3150 1700 30  0001 C CNN
+F 0 "#PWR02" H 3150 1700 30  0001 C CNN
 F 1 "GND" H 3150 1630 30  0001 C CNN
 	1    3150 1700
 	1    0    0    -1  
