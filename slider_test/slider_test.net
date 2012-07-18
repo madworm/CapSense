@@ -1,24 +1,50 @@
-# EESchema Netlist Version 1.1 created  Tue 17 Jul 2012 11:11:38 AM CEST
+# EESchema Netlist Version 1.1 created  Wed 18 Jul 2012 10:16:46 AM CEST
 (
- ( /50052C20 $noname  CS1 slider {Lib=CONN_3}
-  (    1 /pad_a_sense )
-  (    2 /pad_a_store )
-  (    3 GND )
+ ( /50051D64 -C0805 C1 C
+  ( 1 /pad_a_store )
+  ( 2 /pad_a_sense )
  )
- ( /50052699 $noname  TP1 TST {Lib=TST}
-  (    1 /pad_a )
+ ( /5006707B -C0805 C2 C
+  ( 1 /pad_b_store )
+  ( 2 /pad_b_sense )
  )
- ( /50051D72 $noname  R1 R {Lib=R}
-  (    1 /pad_a_sense )
-  (    2 /pad_a )
+ ( /50052C20 SIL-3 CS1 slider
+  ( 1 /pad_a_sense )
+  ( 2 /pad_a_store )
+  ( 3 GND )
  )
- ( /50051D64 $noname  C1 C {Lib=C}
-  (    1 /pad_a_store )
-  (    2 /pad_a_sense )
+ ( /500670A3 SIL-3 CS2 slider
+  ( 1 /pad_b_sense )
+  ( 2 /pad_b_store )
+  ( 3 GND )
+ )
+ ( /50051D72 -R0603 R1 R
+  ( 1 /pad_a_sense )
+  ( 2 /pad_a )
+ )
+ ( /5006707A -R0603 R2 R
+  ( 1 /pad_b_sense )
+  ( 2 /pad_b )
+ )
+ ( /50052699 SIL-1 TP1 TST
+  ( 1 /pad_a )
+ )
+ ( /50067079 SIL-1 TP2 TST
+  ( 1 /pad_b )
  )
 )
 *
 { Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
 $component R1
  R?
  SM0603
@@ -26,23 +52,12 @@ $component R1
  R?-*
  SM1206
 $endlist
-$component C1
- SM*
- C?
- C1-1
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
 $endlist
 $endfootprintlist
 }
-{ Pin List by Nets
-Net 1 "/pad_a" "pad_a"
- R1 2
- TP1 1
-Net 2 "/pad_a_sense" "pad_a_sense"
- C1 2
- R1 1
- CS1 1
-Net 3 "/pad_a_store" "pad_a_store"
- CS1 2
- C1 1
-}
-#End

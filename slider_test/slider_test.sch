@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 17 Jul 2012 11:11:34 AM CEST
+EESchema Schematic File Version 2  date Wed 18 Jul 2012 10:15:58 AM CEST
 LIBS:my_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr User 6000 4330
 encoding utf-8
 Sheet 1 1
 Title "capsense slider"
-Date "17 jul 2012"
+Date "18 jul 2012"
 Rev "0.1"
 Comp ""
 Comment1 ""
@@ -45,77 +45,150 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L GND #PWR?
+U 1 1 500670A4
+P 3150 1150
+F 0 "#PWR?" H 3150 1150 30  0001 C CNN
+F 1 "GND" H 3150 1080 30  0001 C CNN
+	1    3150 1150
+	1    0    0    -1  
+$EndComp
+Text Label 3150 950  2    60   ~ 0
+pad_b_store
+Text Label 3150 850  2    60   ~ 0
+pad_b_sense
+$Comp
+L CONN_3 CS2
+U 1 1 500670A3
+P 3600 950
+F 0 "CS2" V 3550 950 50  0000 C CNN
+F 1 "slider" V 3650 950 40  0000 C CNN
+	1    3600 950 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3150 2450 3150 2350
+	3150 850  3250 850 
 Wire Wire Line
-	3150 2350 3250 2350
+	3150 950  3250 950 
 Wire Wire Line
-	2250 1050 1850 1050
+	3150 1050 3250 1050
 Wire Wire Line
-	1250 1050 1350 1050
+	3150 1150 3150 1050
+$Comp
+L C C2
+U 1 1 5006707B
+P 1050 1100
+F 0 "C2" V 1100 1200 50  0000 L CNN
+F 1 "C" V 1100 1000 50  0000 L CNN
+	1    1050 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5006707A
+P 1600 1100
+F 0 "R2" V 1680 1100 50  0000 C CNN
+F 1 "R" V 1600 1100 50  0000 C CNN
+	1    1600 1100
+	0    -1   -1   0   
+$EndComp
+Text Label 1950 1100 0    60   ~ 0
+pad_b
+Text Label 1350 800  0    60   ~ 0
+pad_b_sense
+Text Label 750  950  0    60   ~ 0
+pad_b_store
+$Comp
+L TST TP2
+U 1 1 50067079
+P 2250 1100
+F 0 "TP2" H 2250 1400 40  0000 C CNN
+F 1 "TST" H 2250 1350 30  0000 C CNN
+	1    2250 1100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3150 2250 3250 2250
+	1350 1100 1350 800 
 Wire Wire Line
-	850  1050 750  1050
+	750  1100 750  950 
 Wire Wire Line
-	750  1050 750  900 
+	850  1100 750  1100
 Wire Wire Line
-	3150 2150 3250 2150
+	1250 1100 1350 1100
 Wire Wire Line
-	1350 1050 1350 750 
+	2250 1100 1850 1100
+Wire Wire Line
+	3150 1700 3150 1600
+Wire Wire Line
+	3150 1600 3250 1600
+Wire Wire Line
+	2250 1650 1850 1650
+Wire Wire Line
+	1250 1650 1350 1650
+Wire Wire Line
+	3150 1500 3250 1500
+Wire Wire Line
+	850  1650 750  1650
+Wire Wire Line
+	750  1650 750  1500
+Wire Wire Line
+	3150 1400 3250 1400
+Wire Wire Line
+	1350 1650 1350 1350
 $Comp
 L CONN_3 CS1
 U 1 1 50052C20
-P 3600 2250
-F 0 "CS1" V 3550 2250 50  0000 C CNN
-F 1 "slider" V 3650 2250 40  0000 C CNN
-	1    3600 2250
+P 3600 1500
+F 0 "CS1" V 3550 1500 50  0000 C CNN
+F 1 "slider" V 3650 1500 40  0000 C CNN
+	1    3600 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L TST TP1
 U 1 1 50052699
-P 2250 1050
-F 0 "TP1" H 2250 1350 40  0000 C CNN
-F 1 "TST" H 2250 1300 30  0000 C CNN
-	1    2250 1050
+P 2250 1650
+F 0 "TP1" H 2250 1950 40  0000 C CNN
+F 1 "TST" H 2250 1900 30  0000 C CNN
+	1    2250 1650
 	1    0    0    -1  
 $EndComp
-Text Label 3150 2150 2    60   ~ 0
+Text Label 3150 1400 2    60   ~ 0
 pad_a_sense
-Text Label 3150 2250 2    60   ~ 0
+Text Label 3150 1500 2    60   ~ 0
 pad_a_store
 $Comp
 L GND #PWR01
 U 1 1 50052303
-P 3150 2450
-F 0 "#PWR01" H 3150 2450 30  0001 C CNN
-F 1 "GND" H 3150 2380 30  0001 C CNN
-	1    3150 2450
+P 3150 1700
+F 0 "#PWR01" H 3150 1700 30  0001 C CNN
+F 1 "GND" H 3150 1630 30  0001 C CNN
+	1    3150 1700
 	1    0    0    -1  
 $EndComp
-Text Label 750  900  0    60   ~ 0
+Text Label 750  1500 0    60   ~ 0
 pad_a_store
-Text Label 1350 750  0    60   ~ 0
+Text Label 1350 1350 0    60   ~ 0
 pad_a_sense
-Text Label 1950 1050 0    60   ~ 0
+Text Label 1950 1650 0    60   ~ 0
 pad_a
 $Comp
 L R R1
 U 1 1 50051D72
-P 1600 1050
-F 0 "R1" V 1680 1050 50  0000 C CNN
-F 1 "R" V 1600 1050 50  0000 C CNN
-	1    1600 1050
+P 1600 1650
+F 0 "R1" V 1680 1650 50  0000 C CNN
+F 1 "R" V 1600 1650 50  0000 C CNN
+	1    1600 1650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L C C1
 U 1 1 50051D64
-P 1050 1050
-F 0 "C1" V 1100 1150 50  0000 L CNN
-F 1 "C" V 1100 950 50  0000 L CNN
-	1    1050 1050
+P 1050 1650
+F 0 "C1" V 1100 1750 50  0000 L CNN
+F 1 "C" V 1100 1550 50  0000 L CNN
+	1    1050 1650
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
