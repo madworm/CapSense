@@ -90,7 +90,7 @@ MSegLar=150
 LastNetListRead=slider_test.net
 [pcbnew/libraries]
 LibDir=
-LibName1=/home/robert/Electronics/Arduino/KiCAD/my_parts
+LibName1=/home/robert/Electronics/Arduino/KiCAD/LIBS/my_parts
 LibName2=sockets
 LibName3=connect
 LibName4=discret
