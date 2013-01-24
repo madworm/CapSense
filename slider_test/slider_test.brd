@@ -1,6 +1,6 @@
-PCBNEW-BOARD Version 2 date Wed 23 Jan 2013 01:31:44 PM CET
+PCBNEW-BOARD Version 2 date Thu 24 Jan 2013 01:23:59 AM CET
 
-# Created by Pcbnew(2013-01-21 BZR 3918)-testing
+# Created by Pcbnew(2013-01-23 BZR 3920)-testing
 
 $GENERAL
 encoding utf-8
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet User 8266 5866
 Title "capsense slider"
-Date "23 jan 2013"
+Date "24 jan 2013"
 Rev "0.1"
 Comp "2012 - blog.spitzenpfeil.org"
 Comment1 ""
@@ -61,7 +61,7 @@ Pad2MaskClearance 0.254
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 0 0
 VisibleElements FFFFFFBF
-PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory gerber_files/))
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory gerber_files/))
 $EndSETUP
 
 $EQUIPOT
